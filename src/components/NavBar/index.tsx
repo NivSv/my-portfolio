@@ -16,8 +16,11 @@ const NavBar = () => {
                     <a
                         href={link.path}
                         key={index}
-                        className="text-primary hidden md:block"
+                        className="text-primaryLight tracking-wider hidden md:block hover:text-callToAction transition-all duration-300"
                     >
+                        <p className="inline text-callToAction mr-2">
+                            {('0' + index).slice(-2)}.
+                        </p>
                         {link.label}
                     </a>
                 ))}
@@ -28,7 +31,7 @@ const NavBar = () => {
                 </Button>
                 <div
                     className={clsx(
-                        'flex flex-col gap-[7px] md:hidden',
+                        'flex flex-col gap-[7px] md:hidden z-50',
                         hamburgerClicked && 'hamburger-active'
                     )}
                     dir="rtl"
@@ -42,6 +45,31 @@ const NavBar = () => {
                     <div className="bg-callToAction w-[27px] h-[2px] rounded-md transition-all"></div>
                 </div>
             </div>
+            <div
+                className={clsx(
+                    'hidden transition-all duration-500 w-0 items-center gap-10 justify-center',
+                    hamburgerClicked && 'sidebar-active'
+                )}
+            >
+                {navBarLinks.map((link, index) => (
+                    <a
+                        href={link.path}
+                        key={index}
+                        className="text-primaryLight text-xl hover:text-callToAction transition-all duration-300 flex flex-col"
+                    >
+                        <p className=" text-callToAction self-center">
+                            {('0' + index).slice(-2)}.
+                        </p>
+                        {link.label}
+                    </a>
+                ))}
+                <Button className="w-44 h-16">
+                    <a href="https://niv-shtibel.me/Niv-Shtibel-CV.pdf">
+                        Resume
+                    </a>
+                </Button>
+            </div>
+            <div className="absolute h-full w-1/4 blur"></div>
         </div>
     )
 }

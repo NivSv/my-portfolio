@@ -3,7 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    overflow: hidden;
+}
+
 .hamburger-active div:nth-child(1) {
+    width: 30px;
     animation: hamburgerTop 500ms linear forwards;
 }
 
@@ -12,8 +17,31 @@
 }
 
 .hamburger-active div:nth-child(3) {
-    width: 44px;
+    width: 30px;
     animation: hamburgerButtom 500ms linear forwards;
+}
+
+.sidebar-active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 50px 10px;
+    background-color: #112240;
+    box-shadow: -10px 0px 30px -15px black;
+    animation: sideBar 130ms linear forwards;
+    z-index: 9;
+    height: 100vh;
+    outline: 0px;
+    transform: translateX(0vw);
+}
+
+@keyframes sideBar {
+    100% {
+        width: min(75vw, 400px);
+    }
 }
 
 @keyframes hamburgerTop {
