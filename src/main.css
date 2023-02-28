@@ -2,3 +2,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hamburger-active div:nth-child(1) {
+    animation: hamburgerTop 500ms linear forwards;
+}
+
+.hamburger-active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-active div:nth-child(3) {
+    width: 44px;
+    animation: hamburgerButtom 500ms linear forwards;
+}
+
+@keyframes hamburgerTop {
+    50% {
+        transform: translateY(9px);
+    }
+    100% {
+        transform: translateY(9px) rotate(405deg);
+    }
+}
+
+@keyframes hamburgerButtom {
+    50% {
+        transform: translateY(-9px);
+    }
+    100% {
+        transform: translateY(-9px) rotate(495deg);
+    }
+}
