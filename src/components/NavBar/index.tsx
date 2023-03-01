@@ -47,7 +47,7 @@ const NavBar = () => {
             </div>
             <div
                 className={clsx(
-                    'hidden transition-all duration-500 w-0 items-center gap-10 justify-center',
+                    'hidden transition-all duration-500 w-0 items-center gap-10 justify-center md:hidden',
                     hamburgerClicked && 'sidebar-active'
                 )}
             >
