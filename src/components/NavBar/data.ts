@@ -10,7 +10,7 @@ export const navBarLinks: NavBarLink[] = [
     },
     {
         label: 'About',
-        path: '/about',
+        path: '#about',
     },
     {
         label: 'Contact',
