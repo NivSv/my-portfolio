@@ -9,7 +9,7 @@ const NavBar = () => {
     const handleHamburgerClick = () => setHamburgerClicked(!hamburgerClicked)
 
     return (
-        <div className="flex justify-between p-8 sticky">
+        <div className="flex justify-between p-8 sticky top-0">
             <div className="text-callToAction">Logo</div>
             <div className="flex items-center gap-8 max">
                 {navBarLinks.map((link, index) => (
@@ -32,7 +32,7 @@ const NavBar = () => {
                 <div
                     className={clsx(
                         'flex flex-col gap-[7px] md:hidden z-50',
-                        hamburgerClicked && 'hamburger-active'
+                        hamburgerClicked && 'hamburger-active fixed right-8'
                     )}
                     dir="rtl"
                     role="button"

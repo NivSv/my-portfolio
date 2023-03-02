@@ -3,10 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    overflow-x: hidden;
-}
-
 body::-webkit-scrollbar {
     width: 12px;
 }
@@ -38,7 +34,7 @@ body::-webkit-scrollbar-thumb {
 .sidebar-active {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     bottom: 0;
