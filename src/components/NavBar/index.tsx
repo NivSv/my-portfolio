@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Button from '../Button'
 import { navBarLinks } from './data'
 
@@ -7,10 +7,31 @@ const NavBar = () => {
     const [hamburgerClicked, setHamburgerClicked] = useState(false)
 
     const handleHamburgerClick = () => setHamburgerClicked(!hamburgerClicked)
+    const [activateScroll, setActivateScroll] = useState(false)
+
+    const handleScroll = () => {
+        if (window.scrollY != 0) {
+            setActivateScroll(true)
+        } else {
+            setActivateScroll(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
 
     return (
-        <div className="flex justify-between p-8 sticky top-0">
-            <div className="text-callToAction">Logo</div>
+        <div
+            className={clsx(
+                'flex justify-between px-8 py-6 sticky top-0 transition-all duration-300',
+                activateScroll && 'nav-start-scrolling'
+            )}
+        >
+            <div className="text-callToAction self-center">Logo</div>
             <div className="flex items-center gap-8 max">
                 {navBarLinks.map((link, index) => (
                     <a

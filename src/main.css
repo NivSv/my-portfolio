@@ -17,6 +17,13 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
 
+.nav-start-scrolling {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+    backdrop-filter: blur(10px);
+}
+
 .hamburger-active div:nth-child(1) {
     width: 30px;
     animation: hamburgerTop 500ms linear forwards;
