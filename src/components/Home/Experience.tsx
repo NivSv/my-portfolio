@@ -71,7 +71,7 @@ const Experience = () => {
                 <p className="text-primary text-3xl uppercase">
                     What i have done so far
                 </p>
-                <h1 className="text-secondary text-7xl inline font-bold">
+                <h1 className="text-secondary text-4xl sm:text-7xl font-bold">
                     Work Experience.
                 </h1>
             </motion.div>
