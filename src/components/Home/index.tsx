@@ -1,10 +1,10 @@
 import AboutMe from './AboutMe'
-import Welcome from './Welcome'
+import Hero from './Hero'
 
 const Home = () => {
     return (
-        <div className="container m-auto">
-            <Welcome />
+        <div>
+            <Hero />
             <AboutMe />
         </div>
     )

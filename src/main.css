@@ -78,3 +78,13 @@ body::-webkit-scrollbar-thumb {
         transform: translateY(-9px) rotate(495deg);
     }
 }
+
+.hero-gradient {
+    background: #59e3c5;
+    background: linear-gradient(-90deg, #59e3c5 0%, rgba(60, 51, 80, 0) 100%);
+    background: -webkit-linear-gradient(
+        -90deg,
+        #59e3c5 0%,
+        rgba(60, 51, 80, 0) 100%
+    );
+}
