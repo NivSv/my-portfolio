@@ -27,7 +27,7 @@ const NavBar = () => {
     return (
         <div
             className={clsx(
-                'flex justify-between px-8 py-6 sticky top-0 transition-all duration-300',
+                'flex justify-between px-8 py-6 sticky top-0 transition-all duration-300 z-50',
                 activateScroll && 'nav-start-scrolling'
             )}
         >
