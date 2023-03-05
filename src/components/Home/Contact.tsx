@@ -4,6 +4,7 @@ import EarthCanvas from '../EarthCanvas'
 import { send } from '@emailjs/browser'
 import { ChangeEvent, FormEvent, useRef, useState } from 'react'
 import StarsCanvas from '../StarsCanvas'
+import Button from '../Button'
 
 const Contact = () => {
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -26,8 +27,7 @@ const Contact = () => {
         })
     }
 
-    const handleSubmit = (e: FormEvent) => {
-        e.preventDefault()
+    const handleSubmit = () => {
         setLoading(true)
 
         send(
@@ -121,12 +121,9 @@ const Contact = () => {
                             />
                         </label>
 
-                        <button
-                            type="submit"
-                            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-                        >
+                        <Button onClick={handleSubmit}>
                             {loading ? 'Sending...' : 'Send'}
-                        </button>
+                        </Button>
                     </form>
                 </motion.div>
 
