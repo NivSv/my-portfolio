@@ -9,13 +9,11 @@ import 'react-vertical-timeline-component/style.min.css'
 
 interface IExperienceCardProps {
     experience: IExperience
-    key: string
 }
 
 const ExperienceCard = (props: IExperienceCardProps) => {
     return (
         <VerticalTimelineElement
-            key={props.key}
             contentStyle={{
                 background: '#112240',
                 color: '#fff',
