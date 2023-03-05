@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <section id="Hero" className="relative h-screen">
             <div
-                className={`absolute inset-0 top-[200px]  max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5 md:top-[250px]`}
+                className={`absolute inset-0 top-[150px]  max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5 md:top-[250px]`}
             >
                 <div className="flex flex-col justify-center items-center mt-5">
                     <div className="w-5 h-5 rounded-full bg-callToAction" />
@@ -51,7 +51,7 @@ const Hero = () => {
                 <Button className="w-36 h-12">Get in touch</Button>
             </div> */}
             <ComputerCanvas />
-            <div className="absolute xs:bottom-10 bottom-44 w-full flex justify-center items-center">
+            <div className="absolute xs:bottom-10 bottom-24 sm:bottom-44 w-full flex justify-center items-center">
                 <a href="#about">
                     <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
                         <motion.div
