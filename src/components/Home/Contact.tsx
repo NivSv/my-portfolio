@@ -141,6 +141,7 @@ const Contact = () => {
                     <EarthCanvas />
                 </motion.div>
             </section>
+            <StarsCanvas />
         </div>
     )
 }

@@ -49,14 +49,14 @@ export const technologies: ITechnologies[] = [
         name: '.NET',
         image: dotnet,
     },
-    // {
-    //     name: 'Redis',
-    //     image: redis,
-    // },
-    // {
-    //     name: 'Kafka',
-    //     image: kafka,
-    // },
+    {
+        name: 'Redis',
+        image: redis,
+    },
+    {
+        name: 'Kafka',
+        image: kafka,
+    },
     // {
     //     name: 'NestJS',
     //     image: nestjs,
