@@ -21,48 +21,48 @@ export const technologies: ITechnologies[] = [
         name: 'React',
         image: react,
     },
-    {
-        name: 'Redux',
-        image: redux,
-    },
-    {
-        name: 'Docker',
-        image: docker,
-    },
+    // {
+    //     name: 'Redux',
+    //     image: redux,
+    // },
+    // {
+    //     name: 'Docker',
+    //     image: docker,
+    // },
     {
         name: 'Node.js',
         image: nodejs,
     },
-    {
-        name: 'Tailwind',
-        image: tailwind,
-    },
-    {
-        name: 'Typescript',
-        image: typescript,
-    },
-    {
-        name: 'Git',
-        image: git,
-    },
+    // {
+    //     name: 'Tailwind',
+    //     image: tailwind,
+    // },
+    // {
+    //     name: 'Typescript',
+    //     image: typescript,
+    // },
+    // {
+    //     name: 'Git',
+    //     image: git,
+    // },
     {
         name: '.NET',
         image: dotnet,
     },
-    {
-        name: 'Redis',
-        image: redis,
-    },
-    {
-        name: 'Kafka',
-        image: kafka,
-    },
-    {
-        name: 'NestJS',
-        image: nestjs,
-    },
-    {
-        name: 'GraphQL',
-        image: graphql,
-    },
+    // {
+    //     name: 'Redis',
+    //     image: redis,
+    // },
+    // {
+    //     name: 'Kafka',
+    //     image: kafka,
+    // },
+    // {
+    //     name: 'NestJS',
+    //     image: nestjs,
+    // },
+    // {
+    //     name: 'GraphQL',
+    //     image: graphql,
+    // },
 ]
