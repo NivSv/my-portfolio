@@ -24,10 +24,7 @@ const Technologies = () => {
                         key={technology.name}
                         title={technology.name}
                     >
-                        <BallCanvas
-                            icon={technology.image}
-                            name={technology.name}
-                        />
+                        <BallCanvas icon={technology.image} />
                     </div>
                 ))}
             </div>
