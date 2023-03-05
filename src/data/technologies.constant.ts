@@ -6,6 +6,10 @@ import tailwind from '../assets/tech/tailwind.png'
 import typescript from '../assets/tech/typescript.png'
 import git from '../assets/tech/git.png'
 import dotnet from '../assets/tech/dotnet.jpg'
+import redis from '../assets/tech/redis.png'
+import kafka from '../assets/tech/kafka.png'
+import nestjs from '../assets/tech/nestjs.png'
+import graphql from '../assets/tech/graphql.png'
 
 export interface ITechnologies {
     name: string
@@ -44,5 +48,21 @@ export const technologies: ITechnologies[] = [
     {
         name: '.NET',
         image: dotnet,
+    },
+    {
+        name: 'Redis',
+        image: redis,
+    },
+    {
+        name: 'Kafka',
+        image: kafka,
+    },
+    {
+        name: 'NestJS',
+        image: nestjs,
+    },
+    {
+        name: 'GraphQL',
+        image: graphql,
     },
 ]

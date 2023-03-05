@@ -16,7 +16,14 @@ export const textVariant = (delay: number | null) => {
     }
 }
 
-export const fadeIn = (direction, type, delay, duration) => {
+interface IFadeInProps {
+    direction: 'left' | 'right' | 'up' | 'down'
+    type: 'spring' | 'tween'
+    delay: number
+    duration: number
+}
+
+export const fadeIn = ({ direction, type, delay, duration }: IFadeInProps) => {
     return {
         hidden: {
             x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
@@ -37,7 +44,12 @@ export const fadeIn = (direction, type, delay, duration) => {
     }
 }
 
-export const zoomIn = (delay, duration) => {
+interface IZoomInProps {
+    delay: number
+    duration: number
+}
+
+export const zoomIn = ({ delay, duration }: IZoomInProps) => {
     return {
         hidden: {
             scale: 0,
@@ -56,7 +68,19 @@ export const zoomIn = (delay, duration) => {
     }
 }
 
-export const slideIn = (direction, type, delay, duration) => {
+interface ISlideInProps {
+    direction: 'left' | 'right' | 'up' | 'down'
+    type: 'spring' | 'tween'
+    delay: number
+    duration: number
+}
+
+export const slideIn = ({
+    direction,
+    type,
+    delay,
+    duration,
+}: ISlideInProps) => {
     return {
         hidden: {
             x:
@@ -80,7 +104,15 @@ export const slideIn = (direction, type, delay, duration) => {
     }
 }
 
-export const staggerContainer = (staggerChildren, delayChildren) => {
+interface IStaggerChildrenProps {
+    staggerChildren: number
+    delayChildren: number
+}
+
+export const staggerContainer = ({
+    staggerChildren,
+    delayChildren,
+}: IStaggerChildrenProps) => {
     return {
         hidden: {},
         show: {
