@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { slideIn } from '../../utils/motion'
 import EarthCanvas from '../EarthCanvas'
 import { send } from '@emailjs/browser'
-import { ChangeEvent, FormEvent, useRef, useState } from 'react'
+import { ChangeEvent, useRef, useState } from 'react'
 import StarsCanvas from '../StarsCanvas'
 import Button from '../Button'
 
