@@ -59,7 +59,7 @@ const ExperienceCard = (props: IExperienceCardProps) => {
 
 const Experience = () => {
     return (
-        <section id="experience" className="container mt-44 mx-auto">
+        <section id="work" className="container mt-44 mx-auto">
             <motion.div
                 initial="hidden"
                 whileInView="show"

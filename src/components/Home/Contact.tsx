@@ -64,7 +64,7 @@ const Contact = () => {
     return (
         <div className="relative z-0">
             <section
-                id="technologies"
+                id="contact"
                 className="container mt-44 mx-auto flex xl:flex-row flex-col-reverse gap-10 overflow-hidden"
             >
                 <motion.div
