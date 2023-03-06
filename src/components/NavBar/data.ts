@@ -5,15 +5,19 @@ interface NavBarLink {
 
 export const navBarLinks: NavBarLink[] = [
     {
-        label: 'Home',
-        path: '/',
-    },
-    {
         label: 'About',
         path: '#about',
     },
     {
+        label: 'Work',
+        path: '#work',
+    },
+    {
+        label: 'Projects',
+        path: '#projects',
+    },
+    {
         label: 'Contact',
-        path: '/contact',
+        path: '#contact',
     },
 ]

@@ -121,7 +121,7 @@ const Contact = () => {
                             />
                         </label>
 
-                        <Button onClick={handleSubmit}>
+                        <Button className="w-24" onClick={handleSubmit}>
                             {loading ? 'Sending...' : 'Send'}
                         </Button>
                     </form>

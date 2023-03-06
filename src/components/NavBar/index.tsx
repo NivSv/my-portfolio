@@ -2,6 +2,8 @@ import clsx from 'clsx'
 import { useEffect, useState } from 'react'
 import Button from '../Button'
 import { navBarLinks } from './data'
+import { motion } from 'framer-motion'
+import { fadeIn, zoomIn } from '../../utils/motion'
 
 const NavBar = () => {
     const [hamburgerClicked, setHamburgerClicked] = useState(false)
@@ -34,7 +36,15 @@ const NavBar = () => {
             <div className="text-callToAction self-center">Logo</div>
             <div className="flex items-center gap-8 max">
                 {navBarLinks.map((link, index) => (
-                    <a
+                    <motion.a
+                        initial="hidden"
+                        whileInView="show"
+                        variants={fadeIn({
+                            direction: 'down',
+                            type: 'spring',
+                            delay: (index - 1) * 0.2,
+                            duration: 0.6,
+                        })}
                         href={link.path}
                         key={index}
                         className="text-primaryLight tracking-wider hidden md:block hover:text-callToAction transition-all duration-300"
@@ -43,13 +53,22 @@ const NavBar = () => {
                             {('0' + index).slice(-2)}.
                         </p>
                         {link.label}
-                    </a>
+                    </motion.a>
                 ))}
-                <Button className="hidden md:block">
-                    <a href="https://niv-shtibel.me/Niv-Shtibel-CV.pdf">
-                        Resume
-                    </a>
-                </Button>
+                <motion.div
+                    initial="hidden"
+                    whileInView="show"
+                    variants={zoomIn({
+                        delay: 0,
+                        duration: 1,
+                    })}
+                >
+                    <Button className="hidden md:block">
+                        <a href="https://niv-shtibel.me/Niv-Shtibel-CV.pdf">
+                            Resume
+                        </a>
+                    </Button>
+                </motion.div>
                 <div
                     className={clsx(
                         'flex flex-col gap-[7px] md:hidden z-50',
