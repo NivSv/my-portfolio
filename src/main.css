@@ -91,7 +91,7 @@ body::-webkit-scrollbar-thumb {
 
 .about-me-photo-wrapper {
     position: relative;
-    width: clamp(200px, 40%, 300px);
+    width: clamp(150px, 200px, 300px);
     border-radius: 10px;
     background-color: #64ffda;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
