@@ -15,7 +15,7 @@ const AboutMe = () => {
                     About Me.
                 </h1>
             </motion.div>
-            <div className="flex flex-col items-center md:justify-center md:flex-row gap-24 mt-10">
+            <div className="flex flex-col items-center md:justify-center md:flex-row gap-24 mt-10 overflow-hidden">
                 <motion.div
                     initial="hidden"
                     whileInView="show"
@@ -59,7 +59,7 @@ const AboutMe = () => {
                         delay: 0,
                         duration: 0.5,
                     })}
-                    className="about-me-photo-wrapper"
+                    className="about-me-photo-wrapper mb-10"
                 >
                     <div className="about-me-photo">
                         <img src={me} alt="as"></img>
