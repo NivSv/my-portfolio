@@ -3,6 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
+*[id]:before {
+    display: block;
+    content: ' ';
+    margin-top: -75px;
+    height: 75px;
+    visibility: hidden;
+}
+
 body::-webkit-scrollbar {
     width: 12px;
 }
