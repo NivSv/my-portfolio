@@ -34,14 +34,12 @@ const NavBar = () => {
                 activateScroll && 'nav-start-scrolling'
             )}
         >
-            <div className="text-callToAction self-center relative w-[100px]">
-                <div className=" top-0 z-[99]">
-                    <img
-                        src={logo}
-                        alt="logo"
-                        className="w-[100px] absolute top-[-30px] right-0"
-                    />
-                </div>
+            <div className="text-callToAction self-center relative w-[100px] h-[20px]">
+                <img
+                    src={logo}
+                    alt="logo"
+                    className="w-[100px] absolute top-[-23px] right-0"
+                />
             </div>
             <div className="flex items-center gap-8 max">
                 {navBarLinks.map((link, index) => (
