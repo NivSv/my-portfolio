@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { textVariant } from '../../utils/motion'
+import { fadeIn, textVariant } from '../../utils/motion'
 import { IProject, ProjectsData } from '../../data/projects.constant'
 
 interface IMainProjectProps {
@@ -10,18 +10,32 @@ interface IMainProjectProps {
 
 const MainProject = ({ project, key, leftSide }: IMainProjectProps) => {
     return (
-        <div key={`project-${key}`} className="flex justify-center mt-16">
-            <img
-                src={project.image}
-                alt={`Project ${project.title}`}
-                title={`Project ${project.title}`}
-            />
+        <motion.div
+            initial="hidden"
+            whileInView="show"
+            variants={fadeIn({
+                delay: 0.2 * key,
+                direction: leftSide ? 'left' : 'right',
+                duration: 0.5,
+                type: 'spring',
+            })}
+            key={`project-${key}`}
+            className="flex justify-center mt-28"
+        >
+            <div className="w-[300px]">
+                <img
+                    className=""
+                    src={project.image}
+                    alt={`Project ${project.title}`}
+                    title={`Project ${project.title}`}
+                />
+            </div>
             <div className="flex flex-col items-end gap-2">
                 <p className="text-md text-callToAction">Featured Project</p>
                 <p className="text-3xl text-primaryLight font-bold">
                     {project.title}
                 </p>
-                <div className="text-primary border-solid bg-slate-800 border-slate-800 w-[400px] text-center rounded-md border-4 shadow-lg">
+                <div className="text-primary border-solid bg-[#233554] border-[#233554] w-[400px] text-center rounded-md border-4 shadow-lg">
                     {project.description}
                 </div>
                 <div className="flex gap-2 text-primary">
@@ -30,13 +44,16 @@ const MainProject = ({ project, key, leftSide }: IMainProjectProps) => {
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
 const Projects = () => {
     return (
-        <section id="projects" className="container mt-44 mx-auto">
+        <section
+            id="projects"
+            className="container mt-44 mx-auto overflow-hidden"
+        >
             <motion.div
                 initial="hidden"
                 whileInView="show"

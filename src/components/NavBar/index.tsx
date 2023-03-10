@@ -4,6 +4,7 @@ import Button from '../Button'
 import { navBarLinks } from './data'
 import { motion } from 'framer-motion'
 import { fadeIn, zoomIn } from '../../utils/motion'
+import logo from '../../assets/logo.png'
 
 const NavBar = () => {
     const [hamburgerClicked, setHamburgerClicked] = useState(false)
@@ -33,7 +34,15 @@ const NavBar = () => {
                 activateScroll && 'nav-start-scrolling'
             )}
         >
-            <div className="text-callToAction self-center">Logo</div>
+            <div className="text-callToAction self-center relative w-[100px]">
+                <div className=" top-0 z-[99]">
+                    <img
+                        src={logo}
+                        alt="logo"
+                        className="w-[100px] absolute top-[-30px] right-0"
+                    />
+                </div>
+            </div>
             <div className="flex items-center gap-8 max">
                 {navBarLinks.map((link, index) => (
                     <motion.a
@@ -109,7 +118,7 @@ const NavBar = () => {
                     </a>
                 </Button>
             </div>
-            <div className="absolute h-full w-1/4 blur"></div>
+            {/* <div className="absolute h-full w-1/4 blur"></div> */}
         </div>
     )
 }
