@@ -7,7 +7,7 @@ export interface IProject {
     image: string
 }
 
-export const Projects: IProject[] = [
+export const ProjectsData: IProject[] = [
     {
         title: 'Portfolio',
         description: 'My personal portfolio website.',
