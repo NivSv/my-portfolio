@@ -20,16 +20,8 @@ const MainProject = ({ project, key, leftSide }: IMainProjectProps) => {
                 type: 'spring',
             })}
             key={`project-${key}`}
-            className="flex justify-center mt-28"
+            className="flex flex-col md:flex-row gap-10 justify-center mt-28"
         >
-            <div className="w-[300px]">
-                <img
-                    className=""
-                    src={project.image}
-                    alt={`Project ${project.title}`}
-                    title={`Project ${project.title}`}
-                />
-            </div>
             <div className="flex flex-col items-end gap-2">
                 <p className="text-md text-callToAction">Featured Project</p>
                 <p className="text-3xl text-primaryLight font-bold">
@@ -38,11 +30,19 @@ const MainProject = ({ project, key, leftSide }: IMainProjectProps) => {
                 <div className="text-primary border-solid bg-[#233554] border-[#233554] w-[400px] text-center rounded-md border-4 shadow-lg">
                     {project.description}
                 </div>
-                <div className="flex gap-2 text-primary">
+                <div className="flex gap-2 flex-wrap text-primary max-w-sm">
                     {project.technologies.map((technology, index) => (
                         <p key={index}>{technology}</p>
                     ))}
                 </div>
+            </div>
+            <div className="w-[300px]">
+                <img
+                    className=""
+                    src={project.image}
+                    alt={`Project ${project.title}`}
+                    title={`Project ${project.title}`}
+                />
             </div>
         </motion.div>
     )

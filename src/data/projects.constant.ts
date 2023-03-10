@@ -42,7 +42,7 @@ export const ProjectsData: IProject[] = [
     },
     {
         title: 'Step By Step',
-        description: 'React Native app and admin panel for a personal trainer.',
+        description: 'React native app and admin panel for a personal trainer.',
         technologies: [
             '.Net(4.8)',
             'React',
