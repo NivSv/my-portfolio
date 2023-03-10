@@ -142,3 +142,16 @@ body::-webkit-scrollbar-thumb {
     mix-blend-mode: normal;
     filter: grayscale(0%) contrast(1);
 }
+
+.underline-link:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #64ffda;
+    transition: width 0.3s;
+}
+
+.underline-link:hover:after {
+    width: 100%;
+}

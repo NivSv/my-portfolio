@@ -43,7 +43,7 @@ const AboutMe = () => {
                             href="https://oversight.co.il/"
                             target="_blank"
                             rel="noreferrer"
-                            className="text-callToAction inline"
+                            className="text-callToAction inline-block underline-link"
                         >
                             oversight
                         </a>{' '}

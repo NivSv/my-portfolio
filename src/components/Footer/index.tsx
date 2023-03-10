@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { AiOutlineStar, AiOutlineFork } from 'react-icons/ai'
 import axios from 'axios'
+import socialMedias from '../SocialMediaBar/data/social_medias'
 
 export const Footer = () => {
     const [stars, setStars] = useState(0)
@@ -16,7 +17,23 @@ export const Footer = () => {
     }, [])
 
     return (
-        <div className="h-[10%] mt-16 mb-4">
+        <div className="h-[10%] mt-16 mb-4 flex flex-col items-center">
+            <div className="flex mb-5 gap-7 md:hidden">
+                {socialMedias.map((socialMedia, index) => (
+                    <a
+                        key={index}
+                        href={socialMedia.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-block"
+                    >
+                        <socialMedia.icon
+                            size={27}
+                            className="fill-primary hover:fill-callToAction transition-all duration-300"
+                        />
+                    </a>
+                ))}
+            </div>
             <a
                 href="https://github.com/NivSv/my-portfolio"
                 target="_blank"
