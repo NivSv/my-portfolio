@@ -7,19 +7,23 @@ export interface IProject {
     image: string
 }
 
-export const Projects: IProject[] = [
+export const ProjectsData: IProject[] = [
     {
-        title: 'Portfolio',
-        description: 'My personal portfolio website.',
+        title: 'Sense Apps - RTL',
+        description:
+            'align your shopify website layout from right to left with one app!',
         technologies: [
+            'Nest.JS',
             'React',
-            'Typescript',
-            'Framer Motion',
-            'Three JS',
+            'GraphQL',
             'Tailwind CSS',
+            'MongoDB',
+            'TurboRepo',
+            'Redis',
+            'Vite',
         ],
         github: '',
-        demo: '',
+        demo: 'https://apps.shopify.com/sense-rtl',
         image: 'https://i.ibb.co/0nZ3Z3S/Portfolio.png',
     },
     {
@@ -37,17 +41,21 @@ export const Projects: IProject[] = [
         image: 'https://i.ibb.co/0nZ3Z3S/Portfolio.png',
     },
     {
-        title: 'Sense Apps - RTL',
-        description: 'My personal portfolio website.',
+        title: 'Step By Step',
+        description: 'React native app and admin panel for a personal trainer.',
         technologies: [
+            '.Net(4.8)',
             'React',
-            'Typescript',
-            'Framer Motion',
-            'Three JS',
+            'TypeScript',
+            'Redux',
             'Tailwind CSS',
+            'SQL(MariaDB)',
+            'Entity Framework',
+            'Vite',
+            'React Native',
         ],
         github: '',
-        demo: '',
+        demo: 'https://play.google.com/store/apps/details?id=com.oversight.il.sbs_app',
         image: 'https://i.ibb.co/0nZ3Z3S/Portfolio.png',
     },
 ]
