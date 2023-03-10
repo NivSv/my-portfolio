@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { fadeIn, textVariant } from '../../utils/motion'
 import { IProject, ProjectsData } from '../../data/projects.constant'
+import { AiOutlineLink } from 'react-icons/ai'
 
 interface IMainProjectProps {
     project: IProject
@@ -22,7 +23,7 @@ const MainProject = ({ project, key, leftSide }: IMainProjectProps) => {
             key={`project-${key}`}
             className="flex flex-col md:flex-row gap-10 justify-center mt-28"
         >
-            <div className="flex flex-col items-end gap-2">
+            <div className="flex flex-col items-center gap-2">
                 <p className="text-md text-callToAction">Featured Project</p>
                 <p className="text-3xl text-primaryLight font-bold">
                     {project.title}
@@ -35,15 +36,28 @@ const MainProject = ({ project, key, leftSide }: IMainProjectProps) => {
                         <p key={index}>{technology}</p>
                     ))}
                 </div>
+                {project.demo && (
+                    <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noreferrer"
+                        title="Demo Link"
+                    >
+                        <AiOutlineLink
+                            size={40}
+                            className="fill-primaryLight"
+                        />
+                    </a>
+                )}
             </div>
-            <div className="w-[300px]">
+            {/* <div className="w-[300px]">
                 <img
                     className=""
                     src={project.image}
                     alt={`Project ${project.title}`}
                     title={`Project ${project.title}`}
                 />
-            </div>
+            </div> */}
         </motion.div>
     )
 }
