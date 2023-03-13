@@ -101,48 +101,6 @@ body::-webkit-scrollbar-thumb {
     );
 }
 
-.about-me-photo-wrapper {
-    position: relative;
-    width: clamp(150px, 200px, 300px);
-    border-radius: 10px;
-    background-color: #64ffda;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.about-me-photo-wrapper::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    border: 2px solid #64ffda;
-    top: 20px;
-    left: 20px;
-    z-index: -1;
-}
-
-.about-me-photo-wrapper:hover::after {
-    top: 10px;
-    left: 10px;
-}
-
-.about-me-photo {
-    mix-blend-mode: multiply;
-    filter: grayscale(100%) contrast(1);
-    transition: all 0.25s;
-}
-
-.about-me-photo img {
-    border-radius: 10px;
-}
-
-.about-me-photo:hover {
-    mix-blend-mode: normal;
-    filter: grayscale(0%) contrast(1);
-}
-
 .underline-link:after {
     content: '';
     display: block;

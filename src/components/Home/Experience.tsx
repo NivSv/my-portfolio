@@ -17,10 +17,15 @@ const ExperienceCard = (props: IExperienceCardProps) => {
             contentStyle={{
                 background: '#112240',
                 color: '#fff',
+                boxShadow: '0 10px 30px -10px rgb(2 12 27 / 70%)',
             }}
             contentArrowStyle={{ borderRight: '7px solid  #112240' }}
             date={props.experience.date}
-            iconStyle={{ background: props.experience.iconBgColor }}
+            iconStyle={{
+                background: props.experience.iconBgColor,
+                // boxShadow:
+                //     '0 0 0 4px #59E3C5, inset 0 2px 0 rgba(0, 0, 0, 0.08),0 3px 0 4px rgba(0, 0, 0, 0.05)',
+            }}
             icon={
                 <div className="flex justify-center items-center w-full h-full">
                     <img
@@ -30,6 +35,8 @@ const ExperienceCard = (props: IExperienceCardProps) => {
                     />
                 </div>
             }
+            //     box-shadow: 0 0 0 4px #c2185b, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+            // 0 3px 0 4px rgba(0, 0, 0, 0.05);
         >
             <div>
                 <h3 className="text-white text-[24px] font-bold">
@@ -47,7 +54,7 @@ const ExperienceCard = (props: IExperienceCardProps) => {
                 {props.experience.points.map((point, index) => (
                     <li
                         key={`experience-point-${index}`}
-                        className="text-white-100 text-[14px] pl-1 tracking-wider"
+                        className="text-secondary text-[14px] pl-1 tracking-wider"
                     >
                         {point}
                     </li>

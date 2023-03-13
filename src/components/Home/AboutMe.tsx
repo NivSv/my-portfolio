@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { fadeIn, slideIn, textVariant } from '../../utils/motion'
-import me from '../../assets/me.jpg'
+import me from '../../assets/2.png'
 
 const AboutMe = () => {
     return (
@@ -59,9 +59,9 @@ const AboutMe = () => {
                         delay: 0,
                         duration: 0.5,
                     })}
-                    className="about-me-photo-wrapper mb-10"
+                    className="mb-4"
                 >
-                    <div className="about-me-photo">
+                    <div className="w-[200px] md:w-[300px]">
                         <img src={me} alt="as"></img>
                     </div>
                 </motion.div>

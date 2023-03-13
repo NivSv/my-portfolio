@@ -28,7 +28,8 @@ export const ProjectsData: IProject[] = [
     },
     {
         title: 'Sense Apps - Whatsapp',
-        description: 'My personal portfolio website.',
+        description:
+            'Whatsapp integration for your shopify store. including chat, order tracking, automations, whatsapp bot and more.',
         technologies: [
             'React',
             'Typescript',
