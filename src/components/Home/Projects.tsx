@@ -28,7 +28,7 @@ const MainProject = ({ project, key, leftSide }: IMainProjectProps) => {
                 <p className="text-3xl text-primaryLight font-bold">
                     {project.title}
                 </p>
-                <div className="text-primary border-solid bg-[#233554] border-[#233554] w-[400px] text-center rounded-md border-4 shadow-lg">
+                <div className="text-primary border-solid bg-[#233554] p-2 border-[#233554] w-[400px] text-center rounded-md border-4 shadow-lg">
                     {project.description}
                 </div>
                 <div className="flex gap-2 flex-wrap text-primary max-w-sm">
