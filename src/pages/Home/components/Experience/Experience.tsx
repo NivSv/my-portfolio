@@ -1,6 +1,6 @@
-import { textVariant } from '../../utils/motion'
+import { textVariant } from '../../../../utils/motion'
 import { motion } from 'framer-motion'
-import { experiences, IExperience } from '../../data/experiences.constant'
+import { experiences, IExperience } from '../../../../data/experiences.constant'
 import {
     VerticalTimeline,
     VerticalTimelineElement,

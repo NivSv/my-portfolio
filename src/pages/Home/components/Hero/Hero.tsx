@@ -1,4 +1,4 @@
-import ComputerCanvas from '../ComputerCanvas'
+import ComputerCanvas from '../../../../components/ComputerCanvas'
 import { motion } from 'framer-motion'
 
 const Hero = () => {

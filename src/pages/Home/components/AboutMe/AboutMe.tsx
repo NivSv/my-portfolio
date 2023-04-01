@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import { fadeIn, slideIn, textVariant } from '../../utils/motion'
-import me from '../../assets/2.png'
+import { fadeIn, slideIn, textVariant } from '@/utils/motion'
+import me from '@/assets/2.png'
 
 const AboutMe = () => {
     return (

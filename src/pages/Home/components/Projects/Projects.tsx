@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import { fadeIn, textVariant } from '../../utils/motion'
-import { IProject, ProjectsData } from '../../data/projects.constant'
+import { fadeIn, textVariant } from '../../../../utils/motion'
+import { IProject, ProjectsData } from '../../../../data/projects.constant'
 import { AiOutlineLink } from 'react-icons/ai'
 
 interface IMainProjectProps {
