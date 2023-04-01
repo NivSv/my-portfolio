@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import { technologies } from '../../data/technologies.constant'
-import { textVariant } from '../../utils/motion'
-import BallCanvas from '../BallCanvas'
+import { technologies } from '../../../../data/technologies.constant'
+import { textVariant } from '../../../../utils/motion'
+import BallCanvas from '../../../../components/BallCanvas'
 
 const Technologies = () => {
     return (

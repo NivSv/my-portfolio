@@ -1,7 +1,7 @@
 import SocialMediaBar from './components/SocialMediaBar'
 import EmailBar from './components/EmailBar'
 import NavBar from './components/NavBar'
-import Home from './components/Home'
+import Home from './pages/Home/Home'
 import { Footer } from './components/Footer'
 
 function App() {

@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
-import { slideIn } from '../../utils/motion'
-import EarthCanvas from '../EarthCanvas'
+import { slideIn } from '../../../../utils/motion'
+import EarthCanvas from '../../../../components/EarthCanvas'
 import { send } from '@emailjs/browser'
 import { ChangeEvent, useRef, useState } from 'react'
-import StarsCanvas from '../StarsCanvas'
-import Button from '../Button'
+import StarsCanvas from '../../../../components/StarsCanvas'
+import Button from '@/components/Button/Button'
 
 const Contact = () => {
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion

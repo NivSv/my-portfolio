@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import { useEffect, useState } from 'react'
-import Button from '../Button'
+import Button from '../Button/Button'
 import { navBarLinks } from './data'
 import { motion } from 'framer-motion'
 import { fadeIn, zoomIn } from '../../utils/motion'
