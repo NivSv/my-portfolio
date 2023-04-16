@@ -25,10 +25,10 @@ export const technologies: ITechnologies[] = [
     //     name: 'Redux',
     //     image: redux,
     // },
-    // {
-    //     name: 'Docker',
-    //     image: docker,
-    // },
+    {
+        name: 'Docker',
+        image: docker,
+    },
     {
         name: 'Node.js',
         image: nodejs,
@@ -45,10 +45,10 @@ export const technologies: ITechnologies[] = [
     //     name: 'Git',
     //     image: git,
     // },
-    {
-        name: '.NET',
-        image: dotnet,
-    },
+    // {
+    //     name: '.NET',
+    //     image: dotnet,
+    // },
     {
         name: 'Redis',
         image: redis,
