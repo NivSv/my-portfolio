@@ -24,7 +24,7 @@ const Hero = () => {
                     >
                         I’m a full-stack developer.
                         <br />
-                        specializing in the Node, React and .Net.
+                        specializing in Node.js and React.
                     </p>
                 </div>
             </div>
