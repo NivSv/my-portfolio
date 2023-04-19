@@ -12,18 +12,17 @@ export interface IExperience {
 
 export const experiences: IExperience[] = [
     {
-        title: 'IT Support',
+        title: 'Automation',
         company_name: 'Check Point Software Technologies',
         icon: checkpoint,
         iconBgColor: '#0fa3f4',
         date: '2021 - 2022',
         points: [
-            'Providing IT support to employees.',
-            'Managing and maintaining the company’s IT infrastructure.',
-            'Working with Windows, Linux, and Mac OS.',
-            'Working with Active Directory, DNS, DHCP, VPN and more.',
-            'Working with Check Point firewalls.',
-            'Verifies the integrity of certain equipment using C++.',
+            'Developed and implemented automated systems to streamline processes and increase efficiency.',
+            'Created a program using C++ to verify the integrity of certain equipment.',
+            'Collaborated with cross-functional teams to identify and resolve technical issues.',
+            'Provided technical support to end-users, including troubleshooting and problem-solving.',
+            'Ensured that all hardware was operating at its optimum level by applying the latest updates and patches.',
         ],
     },
     {
