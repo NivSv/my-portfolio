@@ -12,7 +12,7 @@ module.exports = {
                 background: '#0A192F',
             },
             fontFamily: {
-                Assistant: ['Assistant', 'sans-serif'],
+                Assistant: ['Lato', 'sans-serif'],
             },
         },
     },
