@@ -5,22 +5,21 @@ import { send } from '@emailjs/browser'
 import { ChangeEvent, useRef, useState } from 'react'
 import StarsCanvas from '../../../../components/StarsCanvas'
 import Button from '@/components/Button/Button'
+import { toast } from 'react-toastify'
 
 const Contact = () => {
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const formRef = useRef<HTMLFormElement>(null!)
+    const [loading, setLoading] = useState(false)
     const [form, setForm] = useState({
         name: '',
         email: '',
         message: '',
     })
 
-    const [loading, setLoading] = useState(false)
-
     const handleChange = (e: ChangeEvent) => {
         const { target } = e
         const { name, value } = target as HTMLInputElement
-
         setForm({
             ...form,
             [name]: value,
@@ -29,7 +28,6 @@ const Contact = () => {
 
     const handleSubmit = () => {
         setLoading(true)
-
         send(
             'service_8wr47cj',
             'template_vx3y50z',
@@ -44,8 +42,9 @@ const Contact = () => {
         ).then(
             () => {
                 setLoading(false)
-                alert('Thank you. I will get back to you as soon as possible.')
-
+                toast.success(
+                    'Thank you. I will get back to you as soon as possible.'
+                )
                 setForm({
                     name: '',
                     email: '',
@@ -54,9 +53,8 @@ const Contact = () => {
             },
             (error: Error) => {
                 setLoading(false)
+                toast.error('Ahh, something went wrong. Please try again.')
                 console.error(error)
-
-                alert('Ahh, something went wrong. Please try again.')
             }
         )
     }
