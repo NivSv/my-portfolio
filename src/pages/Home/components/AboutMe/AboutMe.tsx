@@ -47,7 +47,7 @@ const AboutMe = () => {
                         >
                             oversight
                         </a>{' '}
-                        for a variety of clients.
+                        .
                     </p>
                 </motion.div>
                 <motion.div
