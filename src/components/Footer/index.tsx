@@ -1,14 +1,15 @@
 import { Suspense, useEffect, useState } from 'react'
 import { AiOutlineStar, AiOutlineFork } from 'react-icons/ai'
-import axios from 'axios'
 import socialMedias from '../SocialMediaBar/data/social_medias'
+import { githubService } from '../../api/githubService'
 
 export const Footer = () => {
     const [stars, setStars] = useState(0)
     const [forks, setForks] = useState(0)
 
     useEffect(() => {
-        axios('https://api.github.com/repos/NivSv/my-portfolio')
+        githubService
+            .getRepoData()
             .then((response) => {
                 setStars(response.data.stargazers_count)
                 setForks(response.data.forks_count)
