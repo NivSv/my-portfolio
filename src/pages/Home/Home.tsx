@@ -7,14 +7,14 @@ import Technologies from './components/Technologies/Technologies'
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Hero />
             <AboutMe />
             <Technologies />
             <Experience />
             <Projects />
             <Contact />
-        </div>
+        </>
     )
 }
 
