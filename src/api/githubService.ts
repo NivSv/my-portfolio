@@ -11,7 +11,6 @@ interface IRepoData {
 
 const getRepoData = async () => {
     const response = await githubApi.get<IRepoData>('')
-    console.log({ response })
     return response
 }
 

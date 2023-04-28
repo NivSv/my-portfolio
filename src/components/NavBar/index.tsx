@@ -70,11 +70,13 @@ const NavBar = () => {
                         duration: 1,
                     })}
                 >
-                    <Button className="hidden md:block">
-                        <a href="https://niv-shtibel.me/Niv-Shtibel-CV.pdf">
-                            Resume
-                        </a>
-                    </Button>
+                    <div className="hidden md:block">
+                        <Button>
+                            <a href="https://niv-shtibel.me/Niv-Shtibel-CV.pdf">
+                                Resume
+                            </a>
+                        </Button>
+                    </div>
                 </motion.div>
                 <div
                     className={clsx(
@@ -110,7 +112,7 @@ const NavBar = () => {
                         {link.label}
                     </a>
                 ))}
-                <Button className="w-44 h-16">
+                <Button>
                     <a href="https://niv-shtibel.me/Niv-Shtibel-CV.pdf">
                         Resume
                     </a>
