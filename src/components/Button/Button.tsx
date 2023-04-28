@@ -1,4 +1,3 @@
-import clsx from 'clsx'
 import tw from 'tailwind-styled-components'
 interface Props {
     children: React.ReactNode
@@ -7,9 +6,8 @@ interface Props {
 
 const ButtonStyle = tw.div`
     flex
-    border
+    border-2
     rounded-md
-    border-1
     border-solid
     border-callToAction
     px-3
