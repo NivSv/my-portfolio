@@ -2,6 +2,8 @@ import tw from 'tailwind-styled-components'
 interface Props {
     children: React.ReactNode
     onClick?: () => void
+    disabled?: boolean
+    size?: 'small' | 'medium' | 'large'
 }
 
 const ButtonStyle = tw.div`
@@ -21,11 +23,19 @@ const ButtonStyle = tw.div`
     justify-center
     items-center
     text-center
+    cursor-pointer
+    ${(props: Props) => (props.size === 'small' ? 'text-sm' : '')}
+    ${(props: Props) => (props.size === 'medium' ? 'text-base' : '')}
+    ${(props: Props) => (props.size === 'large' ? 'text-lg' : '')}
+    ${(props: Props) => (props.disabled ? 'opacity-50' : '')}
+    ${(props: Props) => (props.disabled ? 'cursor-not-allowed' : '')}
 `
 
 const Button = (props: Props) => {
     return (
         <ButtonStyle
+            size={props.size}
+            disabled={props.disabled}
             onClick={props.onClick}
             role="button"
             tabIndex={0}

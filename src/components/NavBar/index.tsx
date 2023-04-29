@@ -71,7 +71,7 @@ const NavBar = () => {
                     })}
                 >
                     <div className="hidden md:block">
-                        <Button>
+                        <Button size="medium">
                             <a href="https://niv-shtibel.me/Niv-Shtibel-CV.pdf">
                                 Resume
                             </a>
@@ -112,7 +112,7 @@ const NavBar = () => {
                         {link.label}
                     </a>
                 ))}
-                <Button>
+                <Button size="small" disabled>
                     <a href="https://niv-shtibel.me/Niv-Shtibel-CV.pdf">
                         Resume
                     </a>
