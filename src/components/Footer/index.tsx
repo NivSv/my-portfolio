@@ -1,6 +1,6 @@
 import { Suspense, useEffect, useState } from 'react'
 import { AiOutlineStar, AiOutlineFork } from 'react-icons/ai'
-import socialMedias from '../SocialMediaBar/data/social_medias'
+import socialMedias from '../../data/social_medias'
 import { githubService } from '../../api/githubService'
 
 export const Footer = () => {

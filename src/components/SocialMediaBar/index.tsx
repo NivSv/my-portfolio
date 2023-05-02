@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import socialMedias from './data/social_medias'
+import socialMedias from '../../data/social_medias'
 
 const SocialMediaBar: FC = () => {
     const openSocialMedia = (url: string) => {

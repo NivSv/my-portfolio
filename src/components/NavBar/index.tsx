@@ -57,7 +57,7 @@ const NavBar = () => {
                         className="text-primaryLight tracking-wider hidden md:block hover:text-callToAction transition-all duration-300"
                     >
                         <p className="inline text-callToAction mr-2">
-                            {('0' + index).slice(-2)}.
+                            {('0' + index.toString()).slice(-2)}.
                         </p>
                         {link.label}
                     </motion.a>
@@ -71,7 +71,7 @@ const NavBar = () => {
                     })}
                 >
                     <div className="hidden md:block">
-                        <Button>
+                        <Button size="medium">
                             <a href="https://niv-shtibel.me/Niv-Shtibel-CV.pdf">
                                 Resume
                             </a>
@@ -107,12 +107,12 @@ const NavBar = () => {
                         className="text-primaryLight text-xl hover:text-callToAction transition-all duration-300 flex flex-col"
                     >
                         <p className=" text-callToAction self-center">
-                            {('0' + index).slice(-2)}.
+                            {('0' + index.toString()).slice(-2)}.
                         </p>
                         {link.label}
                     </a>
                 ))}
-                <Button>
+                <Button size="large">
                     <a href="https://niv-shtibel.me/Niv-Shtibel-CV.pdf">
                         Resume
                     </a>
