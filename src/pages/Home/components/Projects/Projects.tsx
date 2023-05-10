@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { fadeIn, textVariant } from '../../../../utils/motion'
 import { IProject, ProjectsData } from '../../../../data/projects.constant'
-import { AiOutlineLink } from 'react-icons/ai'
+import { AiOutlineLink, AiOutlineGithub } from 'react-icons/ai'
 
 interface IMainProjectProps {
     project: IProject
@@ -36,28 +36,36 @@ const MainProject = ({ project, key, leftSide }: IMainProjectProps) => {
                         <p key={index}>{technology}</p>
                     ))}
                 </div>
-                {project.demo && (
-                    <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noreferrer"
-                        title="Demo Link"
-                    >
-                        <AiOutlineLink
-                            size={40}
-                            className="fill-primaryLight"
-                        />
-                    </a>
-                )}
+                <div className="flex">
+                    {project.demo && (
+                        <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noreferrer"
+                            title="Demo Link"
+                        >
+                            <AiOutlineLink
+                                size={40}
+                                className="fill-primaryLight hover:translate-y-[-4px] transition-all duration-400 hover:fill-callToAction"
+                            />
+                        </a>
+                    )}
+                    {project.github && (
+                        <a
+                            className="hover:"
+                            href={project.github}
+                            target="_blank"
+                            rel="noreferrer"
+                            title="Demo Link"
+                        >
+                            <AiOutlineGithub
+                                size={40}
+                                className="fill-primaryLight hover:translate-y-[-4px] transition-all duration-400 hover:fill-callToAction"
+                            />
+                        </a>
+                    )}
+                </div>
             </div>
-            {/* <div className="w-[300px]">
-                <img
-                    className=""
-                    src={project.image}
-                    alt={`Project ${project.title}`}
-                    title={`Project ${project.title}`}
-                />
-            </div> */}
         </motion.div>
     )
 }

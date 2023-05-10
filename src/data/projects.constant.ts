@@ -9,31 +9,13 @@ export interface IProject {
 
 export const ProjectsData: IProject[] = [
     {
-        title: 'Sense Apps - RTL',
-        description:
-            'align your shopify website layout from right to left with one app!',
-        technologies: [
-            'Nest.JS',
-            'React',
-            'GraphQL',
-            'Tailwind CSS',
-            'MongoDB',
-            'TurboRepo',
-            'Redis',
-            'Vite',
-        ],
-        github: '',
-        demo: 'https://apps.shopify.com/sense-rtl',
-        image: 'https://i.ibb.co/0nZ3Z3S/Portfolio.png',
-    },
-    {
         title: 'Sense Apps - Whatsapp',
-        description:
-            'Whatsapp integration for your shopify store. including chat, order tracking, automations, whatsapp bot and more.',
+        description: ` Shopify application that integrates with users' shops, tracks end-customer activity, and implements a messaging flow using the Meta API to communicate with customers. 
+        The application also provides analytics on customer data and displays the created flows in a dashboard panel.`,
         technologies: [
             'React',
             'Typescript',
-            'Framer Motion',
+            'FramerMotion',
             'Three JS',
             'Tailwind CSS',
         ],
@@ -42,21 +24,34 @@ export const ProjectsData: IProject[] = [
         image: 'https://i.ibb.co/0nZ3Z3S/Portfolio.png',
     },
     {
-        title: 'Step By Step',
-        description: 'React native app and admin panel for a personal trainer.',
+        title: 'Users Library',
+        description: `Responsive user library app in React, enabling users to view, edit, and delete user data from an API. 
+        The app includes field validation, error handling, Redux for state management, TypeScript for code quality, and a search filter for convenient user lookup.`,
         technologies: [
-            '.Net(4.8)',
             'React',
-            'TypeScript',
-            'Redux',
-            'Tailwind CSS',
-            'SQL(MariaDB)',
-            'Entity Framework',
+            'Redux(toolkit)',
+            'Zod',
+            'Framer Motion',
             'Vite',
-            'React Native',
         ],
-        github: '',
-        demo: 'https://play.google.com/store/apps/details?id=com.oversight.il.sbs_app',
+        github: 'https://github.com/NivSv/Users-Library',
+        demo: 'https://nivsv.github.io/Users-Library',
+        image: 'https://i.ibb.co/0nZ3Z3S/Portfolio.png',
+    },
+    {
+        title: 'Users API',
+        description:
+            'This app is a user API with CRUD functionality, filtering, department/user count feature, and error handling. supporting create/delete departments, unit testing, and CI/CD.',
+        technologies: [
+            'NestJS',
+            'Zod',
+            'Typescript',
+            'pg',
+            'Turborepo',
+            'Docker',
+        ],
+        github: 'https://github.com/NivSv/Users-API',
+        demo: 'https://users-api-iexe.onrender.com/api',
         image: 'https://i.ibb.co/0nZ3Z3S/Portfolio.png',
     },
 ]
