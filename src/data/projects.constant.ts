@@ -9,18 +9,22 @@ export interface IProject {
 
 export const ProjectsData: IProject[] = [
     {
-        title: 'Sense Apps - Whatsapp',
+        title: 'Sense Apps - Whatsapp (Backend)',
         description: ` Shopify application that integrates with users' shops, tracks end-customer activity, and implements a messaging flow using the Meta API to communicate with customers. 
         The application also provides analytics on customer data and displays the created flows in a dashboard panel.`,
         technologies: [
+            'Node.js',
+            'NestJS',
+            'Kafka',
+            'Redis',
+            'PostgreSQL',
             'React',
-            'Typescript',
-            'FramerMotion',
-            'Three JS',
-            'Tailwind CSS',
+            'TypeScript',
+            'Docker',
+            'Kubernetes',
         ],
         github: '',
-        demo: '',
+        demo: 'https://apps.shopify.com/sense-whatsapp',
         image: 'https://i.ibb.co/0nZ3Z3S/Portfolio.png',
     },
     {
