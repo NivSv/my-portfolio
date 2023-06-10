@@ -4,6 +4,7 @@ import socialMedias from '../../../../../data/social_medias'
 import { ChangeEvent, useRef, useState } from 'react'
 import { toast } from 'react-toastify'
 import { send } from '@emailjs/browser'
+import { z, ZodError } from 'zod'
 
 const Form = tw.form`
     bg-[#233554]
@@ -23,10 +24,22 @@ const Form = tw.form`
 
 export default function ContactForm() {
     const [loading, setLoading] = useState(false)
+    const [error, setError] = useState<ZodError | null>(null)
     const [form, setForm] = useState({
         name: '',
         email: '',
         message: '',
+    })
+
+    const submitFormSchema = z.object({
+        name: z.string().min(2, {
+            message: 'Name is too short must contain at least 2 character(s)',
+        }),
+        email: z.string().email({ message: 'Invalid email' }),
+        message: z.string().min(10, {
+            message:
+                'Message is too short! must contain at least 10 character(s)',
+        }),
     })
 
     const handleChange = (e: ChangeEvent) => {
@@ -39,9 +52,14 @@ export default function ContactForm() {
     }
 
     const handleSubmit = () => {
-        console.log(form)
-
+        setError(null)
         setLoading(true)
+        const result = submitFormSchema.safeParse(form)
+        if (!result.success) {
+            setError(result.error)
+            setLoading(false)
+            return
+        }
         send(
             'service_8wr47cj',
             'template_vx3y50z',
@@ -140,6 +158,9 @@ export default function ContactForm() {
                     {loading ? 'Sending...' : 'Send'}
                 </Button>
             </div>
+            {error && (
+                <div className="text-red-600">{error.issues[0].message}</div>
+            )}
         </Form>
     )
 }
