@@ -32,19 +32,14 @@ export default function ContactForm() {
     })
 
     const submitFormSchema = z.object({
-        name: z
-            .string()
-            .min(2, {
-                message:
-                    'Name is too short must contain at least 2 character(s)',
-            }),
+        name: z.string().min(2, {
+            message: 'Name is too short must contain at least 2 character(s)',
+        }),
         email: z.string().email({ message: 'Invalid email' }),
-        message: z
-            .string()
-            .min(10, {
-                message:
-                    'Message is too short! must contain at least 10 character(s)',
-            }),
+        message: z.string().min(10, {
+            message:
+                'Message is too short! must contain at least 10 character(s)',
+        }),
     })
 
     const handleChange = (e: ChangeEvent) => {
