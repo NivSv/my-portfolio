@@ -19,65 +19,74 @@
         <script>
             // Function to check if Bluetooth is available
             function checkBluetoothAvailability() {
-                return navigator.bluetooth.getAvailability()
-                .then(isAvailable => {
-                    if (isAvailable) {
-                        console.log('Bluetooth is available!');
-                    } else {
-                        console.error('Bluetooth is not available on this device.');
-                    }
-                    return isAvailable;
-                });
+                return navigator.bluetooth
+                    .getAvailability()
+                    .then((isAvailable) => {
+                        if (isAvailable) {
+                            console.log('Bluetooth is available!')
+                        } else {
+                            console.error(
+                                'Bluetooth is not available on this device.'
+                            )
+                        }
+                        return isAvailable
+                    })
             }
-            
+
             // Function to request a Bluetooth device
             function requestBluetoothDevice() {
-                console.log('Requesting any Bluetooth Device...');
-                return navigator.bluetooth.requestDevice({
-                    // Filters for devices
-                    acceptAllDevices: true
-                })
-                .then(device => {
-                    console.log('> Selected Device: ' + device.name);
-                    return device;
-                })
-                .catch(error => {
-                    console.error('Argh! ' + error);
-                });
+                console.log('Requesting any Bluetooth Device...')
+                return navigator.bluetooth
+                    .requestDevice({
+                        // Filters for devices
+                        acceptAllDevices: true,
+                    })
+                    .then((device) => {
+                        console.log('> Selected Device: ' + device.name)
+                        return device
+                    })
+                    .catch((error) => {
+                        console.error('Argh! ' + error)
+                    })
             }
-            
+
             // Function to connect to the device and get the GATT Server
             function connectToDevice(device) {
                 if (!device.gatt.connected) {
-                    return device.gatt.connect()
-                    .then(server => {
-                        console.log('> GATT Server connected, getting service...');
-                        // Here you can define the service you want to interact with
-                        // For example: return server.getPrimaryService('battery_service');
-                    })
-                    .catch(error => {
-                        console.error('Argh! ' + error);
-                    });
+                    return device.gatt
+                        .connect()
+                        .then((server) => {
+                            console.log(
+                                '> GATT Server connected, getting service...'
+                            )
+                            // Here you can define the service you want to interact with
+                            // For example: return server.getPrimaryService('battery_service');
+                        })
+                        .catch((error) => {
+                            console.error('Argh! ' + error)
+                        })
                 }
-                console.log('Device is already connected');
+                console.log('Device is already connected')
             }
-        
+
             // Event listener for initiating Bluetooth functionality
+            function handleBluetoothConnection() {
                 checkBluetoothAvailability()
-                .then(isAvailable => {
-                    if (isAvailable) {
-                        return requestBluetoothDevice();
-                    }
-                })
-                .then(device => {
-                    if (device) {
-                        return connectToDevice(device);
-                    }
-                })
-                .then(service => {
-                    // Do something with the service
-                    // ...
-                });
+                    .then((isAvailable) => {
+                        if (isAvailable) {
+                            return requestBluetoothDevice();
+                        }
+                    })
+                    .then((device) => {
+                        if (device) {
+                            return connectToDevice(device);
+                        }
+                    })
+                    .then((service) => {
+                        // Do something with the service
+                        // ...
+                    });
+            }
         </script>
     </head>
     <body>
