@@ -19,7 +19,7 @@
         "clsx": "^1.2.1",
         "framer-motion": "^10.12.16",
         "husky-init": "^8.0.0",
-        "maath": "^0.5.3",
+        "maath": "^0.6.0",
         "postprocessing": "^6.31.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
