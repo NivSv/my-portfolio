@@ -74,18 +74,18 @@
                 checkBluetoothAvailability()
                     .then((isAvailable) => {
                         if (isAvailable) {
-                            return requestBluetoothDevice();
+                            return requestBluetoothDevice()
                         }
                     })
                     .then((device) => {
                         if (device) {
-                            return connectToDevice(device);
+                            return connectToDevice(device)
                         }
                     })
                     .then((service) => {
                         // Do something with the service
                         // ...
-                    });
+                    })
             }
         </script>
     </head>

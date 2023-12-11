@@ -6,8 +6,7 @@ import { motion } from 'framer-motion'
 import { fadeIn, zoomIn } from '../../utils/motion'
 import logo from '../../assets/logo.png'
 
-declare function handleBluetoothConnection(): void;
-
+declare function handleBluetoothConnection(): void
 
 const NavBar = () => {
     const [hamburgerClicked, setHamburgerClicked] = useState(false)
@@ -96,7 +95,15 @@ const NavBar = () => {
                     <div className="bg-callToAction w-[36px] h-[2px] rounded-md transition-all"></div>
                     <div className="bg-callToAction w-[27px] h-[2px] rounded-md transition-all"></div>
                 </div>
-                <Button size="medium" onClick={() => {handleBluetoothConnection()}}> bluetoothButton</Button>
+                <Button
+                    size="medium"
+                    onClick={() => {
+                        handleBluetoothConnection()
+                    }}
+                >
+                    {' '}
+                    bluetoothButton
+                </Button>
             </div>
             <div
                 className={clsx(
