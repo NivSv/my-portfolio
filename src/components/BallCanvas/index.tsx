@@ -10,6 +10,7 @@ import {
 } from '@react-three/drei'
 
 import CanvasLoader from '../CanvasLoader'
+import { Color } from 'three'
 
 const Ball = ({ icon }: IBallCanvasProps) => {
     const [decal] = useTexture([icon])
@@ -21,7 +22,7 @@ const Ball = ({ icon }: IBallCanvasProps) => {
             <mesh castShadow receiveShadow scale={2.75}>
                 <icosahedronGeometry args={[1, 1]} />
                 <meshStandardMaterial
-                    color="#fff8eb"
+                    color={new Color(0xfff8eb)}
                     polygonOffset
                     polygonOffsetFactor={-5}
                     flatShading
