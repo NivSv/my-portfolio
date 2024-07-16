@@ -51,8 +51,8 @@ importers:
         specifier: ^9.8.1
         version: 9.8.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-toastify:
-        specifier: ^10.0.4
-        version: 10.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: ^10.0.5
+        version: 10.0.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-vertical-timeline-component:
         specifier: ^3.6.0
         version: 3.6.0(react@18.2.0)
@@ -1753,11 +1753,11 @@ packages:
     peerDependencies:
       react: ^18.0.0
 
-  react-toastify@10.0.4:
-    resolution: {integrity: sha512-etR3RgueY8pe88SA67wLm8rJmL1h+CLqUGHuAoNsseW35oTGJEri6eBTyaXnFKNQ80v/eO10hBYLgz036XRGgA==}
+  react-toastify@10.0.5:
+    resolution: {integrity: sha512-mNKt2jBXJg4O7pSdbNUfDdTsK9FIdikfsIE/yUCxbAEXl4HMyJaivrVFcn3Elvt5xvCQYhUZm+hqTIu1UXM3Pw==}
     peerDependencies:
-      react: '>=16'
-      react-dom: '>=16'
+      react: '>=18'
+      react-dom: '>=18'
 
   react-use-measure@2.1.1:
     resolution: {integrity: sha512-nocZhN26cproIiIduswYpV5y5lQpSQS1y/4KuvUCjSKmw7ZWIS/+g3aFnX3WdBkyuGUtTLif3UTqnLLhbDoQig==}
@@ -3850,7 +3850,7 @@ snapshots:
       react: 18.2.0
       scheduler: 0.21.0
 
-  react-toastify@10.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  react-toastify@10.0.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       clsx: 2.1.0
       react: 18.2.0
