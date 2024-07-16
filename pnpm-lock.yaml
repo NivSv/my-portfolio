@@ -36,7 +36,7 @@ importers:
         specifier: ^0.10.7
         version: 0.10.7(@types/three@0.161.2)(three@0.161.0)
       postprocessing:
-        specifier: ^6.34.3
+        specifier: ^6.33.4
         version: 6.34.3(three@0.161.0)
       react:
         specifier: ^18.2.0
@@ -61,7 +61,7 @@ importers:
         version: 0.161.0
       vite-tsconfig-paths:
         specifier: ^4.3.1
-        version: 4.3.1(typescript@5.3.3)(vite@5.1.7(sass@1.71.1))
+        version: 4.3.1(typescript@5.3.3)(vite@5.1.7(sass@1.77.8))
       zod:
         specifier: ^3.22.4
         version: 3.22.4
@@ -86,7 +86,7 @@ importers:
         version: 7.0.2(eslint@8.57.0)(typescript@5.3.3)
       '@vitejs/plugin-react-swc':
         specifier: ^3.6.0
-        version: 3.6.0(vite@5.1.7(sass@1.71.1))
+        version: 3.6.0(vite@5.1.7(sass@1.77.8))
       autoprefixer:
         specifier: ^10.4.17
         version: 10.4.17(postcss@8.4.35)
@@ -118,8 +118,8 @@ importers:
         specifier: ^3.2.5
         version: 3.2.5
       sass:
-        specifier: ^1.71.1
-        version: 1.71.1
+        specifier: ^1.77.8
+        version: 1.77.8
       tailwind-styled-components:
         specifier: ^2.2.0
         version: 2.2.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -131,7 +131,7 @@ importers:
         version: 5.3.3
       vite:
         specifier: ^5.1.7
-        version: 5.1.7(sass@1.71.1)
+        version: 5.1.7(sass@1.77.8)
 
 packages:
 
@@ -1833,8 +1833,8 @@ packages:
   safe-regex-test@1.0.0:
     resolution: {integrity: sha512-JBUUzyOgEwXQY1NuPtvcj/qcBDbDmEvWufhlnXZIm75DEHp+afM1r1ujJpJsV/gSM4t59tpDyPi1sd6ZaPFfsA==}
 
-  sass@1.71.1:
-    resolution: {integrity: sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg==}
+  sass@1.77.8:
+    resolution: {integrity: sha512-4UHg6prsrycW20fqLGPShtEvo/WyHRVRHwOP4DzkUrObWoWI05QBSfzU71TVB7PFaL104TwNaHpjlWXAZbQiNQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -2664,10 +2664,10 @@ snapshots:
       '@use-gesture/core': 10.3.0
       react: 18.2.0
 
-  '@vitejs/plugin-react-swc@3.6.0(vite@5.1.7(sass@1.71.1))':
+  '@vitejs/plugin-react-swc@3.6.0(vite@5.1.7(sass@1.77.8))':
     dependencies:
       '@swc/core': 1.4.2
-      vite: 5.1.7(sass@1.71.1)
+      vite: 5.1.7(sass@1.77.8)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -3962,7 +3962,7 @@ snapshots:
       get-intrinsic: 1.2.2
       is-regex: 1.1.4
 
-  sass@1.71.1:
+  sass@1.77.8:
     dependencies:
       chokidar: 3.5.3
       immutable: 4.3.4
@@ -4253,25 +4253,25 @@ snapshots:
 
   uuid@9.0.1: {}
 
-  vite-tsconfig-paths@4.3.1(typescript@5.3.3)(vite@5.1.7(sass@1.71.1)):
+  vite-tsconfig-paths@4.3.1(typescript@5.3.3)(vite@5.1.7(sass@1.77.8)):
     dependencies:
       debug: 4.3.4
       globrex: 0.1.2
       tsconfck: 3.0.2(typescript@5.3.3)
     optionalDependencies:
-      vite: 5.1.7(sass@1.71.1)
+      vite: 5.1.7(sass@1.77.8)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@5.1.7(sass@1.71.1):
+  vite@5.1.7(sass@1.77.8):
     dependencies:
       esbuild: 0.19.12
       postcss: 8.4.35
       rollup: 4.12.0
     optionalDependencies:
       fsevents: 2.3.3
-      sass: 1.71.1
+      sass: 1.77.8
 
   webgl-constants@1.1.1: {}
 
