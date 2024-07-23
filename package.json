@@ -46,7 +46,7 @@
         "eslint-plugin-import": "^2.29.1",
         "eslint-plugin-jsx-a11y": "^6.8.0",
         "eslint-plugin-react": "^7.33.2",
-        "husky": "^9.0.11",
+        "husky": "^9.1.1",
         "postcss": "^8.4.35",
         "prettier": "^3.2.5",
         "sass": "^1.77.8",
