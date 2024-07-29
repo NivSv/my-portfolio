@@ -21,7 +21,7 @@
         "husky-init": "^8.0.0",
         "maath": "^0.10.7",
         "postprocessing": "^6.35.6",
-        "react": "^18.2.0",
+        "react": "^18.3.1",
         "react-dom": "^18.2.0",
         "react-icons": "^5.2.1",
         "react-intersection-observer": "^9.8.1",
@@ -32,7 +32,7 @@
         "zod": "^3.22.4"
     },
     "devDependencies": {
-        "@types/react": "^18.2.58",
+        "@types/react": "^18.3.3",
         "@types/react-dom": "^18.2.19",
         "@types/react-vertical-timeline-component": "^3.3.6",
         "@types/three": "^0.166.0",
