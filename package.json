@@ -17,7 +17,7 @@
         "@react-three/postprocessing": "^2.16.2",
         "axios": "^1.7.2",
         "clsx": "^2.1.0",
-        "framer-motion": "^11.0.6",
+        "framer-motion": "^11.3.19",
         "husky-init": "^8.0.0",
         "maath": "^0.10.7",
         "postprocessing": "^6.36.0",
