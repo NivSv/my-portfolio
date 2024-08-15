@@ -27,7 +27,7 @@
         "react-intersection-observer": "^9.8.1",
         "react-toastify": "^10.0.5",
         "react-vertical-timeline-component": "^3.6.0",
-        "three": "^0.166.1",
+        "three": "^0.167.0",
         "vite-tsconfig-paths": "^4.3.2",
         "zod": "^3.22.4"
     },
