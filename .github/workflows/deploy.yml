@@ -12,15 +12,15 @@ jobs:
 
         steps:
             - name: Checkout repo
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Setup Node
-              uses: actions/setup-node@v1
+              uses: actions/setup-node@v4
               with:
                   node-version: 20.11.1
 
             - name: Install dependencies
-              uses: pnpm/action-setup@v2
+              uses: pnpm/action-setup@v4
               with:
                   version: 6.0.2
                   run_install: |
@@ -31,7 +31,7 @@ jobs:
               run: pnpm run build
 
             - name: Upload production-ready build files
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v4
               with:
                   name: production-files
                   path: ./dist
@@ -44,13 +44,13 @@ jobs:
 
         steps:
             - name: Download artifact
-              uses: actions/download-artifact@v4.1.7
+              uses: actions/download-artifact@v4
               with:
                   name: production-files
                   path: ./dist
 
             - name: Deploy to GitHub Pages
-              uses: peaceiris/actions-gh-pages@v3
+              uses: peaceiris/actions-gh-pages@v4
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   publish_dir: ./dist
