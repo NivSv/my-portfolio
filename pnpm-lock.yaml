@@ -36,8 +36,8 @@ importers:
         specifier: ^0.10.8
         version: 0.10.8(@types/three@0.167.2)(three@0.167.1)
       postprocessing:
-        specifier: ^6.36.0
-        version: 6.36.0(three@0.167.1)
+        specifier: ^6.36.2
+        version: 6.36.2(three@0.167.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -1840,10 +1840,10 @@ packages:
     resolution: {integrity: sha512-Aweb9unOEpQ3ezu4Q00DPvvM2ZTUitJdNKeP/+uQgr1IBIqu574IaZoURId7BKtWMREwzKa9OgzPzezWGPWFQw==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postprocessing@6.36.0:
-    resolution: {integrity: sha512-7V2t8Yi+Edh0FybErMdBV3CCJ/tTeNeLh6z+i0VczwZ6HGV3XyRfC8v4Ps9a6tjawcTvatLptQzX8QnDlU8BXw==}
+  postprocessing@6.36.2:
+    resolution: {integrity: sha512-a1qZjpm0Vrozat7YFtYOEvwElWz/ukhxoA+K7HzDVeor20vzacREMnJZL5GTj6TFVr7/ma3W0qD03Go0V5gQOA==}
     peerDependencies:
-      three: '>= 0.157.0 < 0.168.0'
+      three: '>= 0.157.0 < 0.169.0'
 
   potpack@1.0.2:
     resolution: {integrity: sha512-choctRBIV9EMT9WGAZHn3V7t0Z2pMQyl0EZE6pFc/6ml3ssw7Dlf/oAOvFwjm1HVsqfQN8GfeFyJ+d8tRzqueQ==}
@@ -2645,8 +2645,8 @@ snapshots:
       '@react-three/fiber': 8.16.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.167.1)
       buffer: 6.0.3
       maath: 0.6.0(@types/three@0.167.2)(three@0.167.1)
-      n8ao: 1.7.0(postprocessing@6.36.0(three@0.167.1))(three@0.167.1)
-      postprocessing: 6.36.0(three@0.167.1)
+      n8ao: 1.7.0(postprocessing@6.36.2(three@0.167.1))(three@0.167.1)
+      postprocessing: 6.36.2(three@0.167.1)
       react: 18.3.1
       three: 0.167.1
       three-stdlib: 2.29.4(three@0.167.1)
@@ -4093,9 +4093,9 @@ snapshots:
       object-assign: 4.1.1
       thenify-all: 1.6.0
 
-  n8ao@1.7.0(postprocessing@6.36.0(three@0.167.1))(three@0.167.1):
+  n8ao@1.7.0(postprocessing@6.36.2(three@0.167.1))(three@0.167.1):
     dependencies:
-      postprocessing: 6.36.0(three@0.167.1)
+      postprocessing: 6.36.2(three@0.167.1)
       three: 0.167.1
 
   nanoid@3.3.7: {}
@@ -4248,7 +4248,7 @@ snapshots:
       picocolors: 1.0.1
       source-map-js: 1.2.0
 
-  postprocessing@6.36.0(three@0.167.1):
+  postprocessing@6.36.2(three@0.167.1):
     dependencies:
       three: 0.167.1
 
