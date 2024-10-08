@@ -109,8 +109,8 @@ importers:
         specifier: ^7.35.0
         version: 7.35.0(eslint@9.10.0(jiti@1.21.0))
       husky:
-        specifier: ^9.1.1
-        version: 9.1.1
+        specifier: ^9.1.6
+        version: 9.1.6
       postcss:
         specifier: ^8.4.44
         version: 8.4.44
@@ -1390,8 +1390,8 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  husky@9.1.1:
-    resolution: {integrity: sha512-fCqlqLXcBnXa/TJXmT93/A36tJsjdJkibQ1MuIiFyCCYUlpYpIaj2mv1w+3KR6Rzu1IC3slFTje5f6DUp2A2rg==}
+  husky@9.1.6:
+    resolution: {integrity: sha512-sqbjZKK7kf44hfdE94EoX8MZNk0n7HeW37O4YrVGCF4wzgQjp+akPAkfUK5LZ6KuR/6sqeAVuXHji+RzQgOn5A==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -3802,7 +3802,7 @@ snapshots:
 
   husky@8.0.3: {}
 
-  husky@9.1.1: {}
+  husky@9.1.6: {}
 
   ieee754@1.2.1: {}
 
