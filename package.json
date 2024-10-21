@@ -37,7 +37,7 @@
         "@types/react-vertical-timeline-component": "^3.3.6",
         "@types/three": "^0.168.0",
         "@typescript-eslint/eslint-plugin": "^8.7.0",
-        "@typescript-eslint/parser": "^8.7.0",
+        "@typescript-eslint/parser": "^8.10.0",
         "@vitejs/plugin-react-swc": "^3.7.0",
         "autoprefixer": "^10.4.20",
         "eslint": "^9.12.0",
