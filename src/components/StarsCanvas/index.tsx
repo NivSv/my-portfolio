@@ -5,7 +5,7 @@ import { Points, PointMaterial, Preload } from '@react-three/drei'
 import { inSphere } from 'maath/random/dist/maath-random.cjs'
 
 const Stars = () => {
-    const ref = useRef<any>()
+    const ref = useRef<any>(null)
     const [sphere] = useState(() =>
         inSphere(new Float32Array(5000), { radius: 1.2 })
     )
