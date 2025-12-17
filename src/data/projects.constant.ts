@@ -9,6 +9,26 @@ export interface IProject {
 
 export const ProjectsData: IProject[] = [
     {
+        title: 'Reflectiz Security Scanning Bot',
+        description: `Core infrastructure component of Reflectiz's cybersecurity platform - a sophisticated browser automation bot that remotely scans websites for security, privacy, and compliance risks. Built with Puppeteer for headless browser control, the bot injects custom JavaScript to mock browser APIs, intercept network calls, and add hooks for monitoring JavaScript execution in real-time. Handles Big Data processing for Fortune 500 enterprises, detecting vulnerabilities that traditional security solutions cannot identify.`,
+        technologies: [
+            'Node.js',
+            'TypeScript',
+            'Puppeteer',
+            'JavaScript Injection',
+            'Browser Automation',
+            'Microservices',
+            'Message Queues',
+            'Redis',
+            'Grafana',
+            'SQL',
+            'Cloud Infrastructure',
+        ],
+        github: null,
+        demo: 'https://www.reflectiz.com/',
+        image: 'https://i.ibb.co/0nZ3Z3S/Portfolio.png',
+    },
+    {
         title: 'Sense Apps - Whatsapp (Backend)',
         description: ` Shopify application that integrates with users' shops, tracks end-customer activity, and implements a messaging flow using the Meta API to communicate with customers. 
         The application also provides analytics on customer data and displays the created flows in a dashboard panel.`,
@@ -24,7 +44,7 @@ export const ProjectsData: IProject[] = [
             'Kubernetes',
         ],
         github: '',
-        demo: 'https://apps.shopify.com/sense-whatsapp',
+        demo: 'https://apps.shopify.com/sense-wa',
         image: 'https://i.ibb.co/0nZ3Z3S/Portfolio.png',
     },
     {

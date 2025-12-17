@@ -35,8 +35,8 @@ importers:
                 specifier: ^0.10.8
                 version: 0.10.8(@types/three@0.182.0)(three@0.182.0)
             postprocessing:
-                specifier: ^6.36.2
-                version: 6.36.2(three@0.182.0)
+                specifier: ^6.38.1
+                version: 6.38.1(three@0.182.0)
             react:
                 specifier: 19.2.3
                 version: 19.2.3
@@ -1541,10 +1541,10 @@ packages:
         peerDependencies:
             three: '>=0.126.1'
 
-    caniuse-lite@1.0.30001651:
+    caniuse-lite@1.0.30001760:
         resolution:
             {
-                integrity: sha512-9Cf+Xv1jJNe1xPZLGuUXLNkE1BoDkqRqYyFJ9TDYSqhduqA4hu4oR9HluGoWYQC/aj8WHjsGVV+bwkh0+tegRg==,
+                integrity: sha512-7AAMPcueWELt1p3mi13HR/LHH0TJLT11cnwDJEs3xA4+CK/PLKeO9Kl1oru24htkyUKtkGCvAx4ohB0Ttry8Dw==,
             }
 
     chalk@4.1.2:
@@ -3271,14 +3271,6 @@ packages:
             }
         engines: { node: ^10 || ^12 || >=14 }
 
-    postprocessing@6.36.2:
-        resolution:
-            {
-                integrity: sha512-a1qZjpm0Vrozat7YFtYOEvwElWz/ukhxoA+K7HzDVeor20vzacREMnJZL5GTj6TFVr7/ma3W0qD03Go0V5gQOA==,
-            }
-        peerDependencies:
-            three: '>= 0.157.0 < 0.169.0'
-
     postprocessing@6.38.1:
         resolution:
             {
@@ -4912,7 +4904,7 @@ snapshots:
     autoprefixer@10.4.20(postcss@8.4.44):
         dependencies:
             browserslist: 4.23.3
-            caniuse-lite: 1.0.30001651
+            caniuse-lite: 1.0.30001760
             fraction.js: 4.3.7
             normalize-range: 0.1.2
             picocolors: 1.0.1
@@ -4964,7 +4956,7 @@ snapshots:
 
     browserslist@4.23.3:
         dependencies:
-            caniuse-lite: 1.0.30001651
+            caniuse-lite: 1.0.30001760
             electron-to-chromium: 1.5.11
             node-releases: 2.0.18
             update-browserslist-db: 1.1.0(browserslist@4.23.3)
@@ -4996,7 +4988,7 @@ snapshots:
         dependencies:
             three: 0.182.0
 
-    caniuse-lite@1.0.30001651: {}
+    caniuse-lite@1.0.30001760: {}
 
     chalk@4.1.2:
         dependencies:
@@ -6148,10 +6140,6 @@ snapshots:
             nanoid: 3.3.11
             picocolors: 1.1.1
             source-map-js: 1.2.1
-
-    postprocessing@6.36.2(three@0.182.0):
-        dependencies:
-            three: 0.182.0
 
     postprocessing@6.38.1(three@0.182.0):
         dependencies:

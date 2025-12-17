@@ -37,17 +37,18 @@ const AboutMe = () => {
                         as a developer.
                     </p>
                     <p className="text-primary break-words  text-lg md:text-2xl pt-4">
-                        My main focus these days is building accessible,
-                        inclusive shopify applications and web services at{' '}
+                        My main focus these days is building scalable backend
+                        infrastructure and security scanning systems at{' '}
                         <a
-                            href="https://oversight.co.il/"
+                            href="https://www.reflectiz.com/"
                             target="_blank"
                             rel="noreferrer"
                             className="text-callToAction inline-block underline-link"
                         >
-                            oversight
+                            Reflectiz
                         </a>{' '}
-                        .
+                        , a fast-growing cybersecurity company specializing in
+                        proactive website security.
                     </p>
                 </motion.div>
                 <motion.div
