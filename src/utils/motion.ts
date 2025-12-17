@@ -1,4 +1,6 @@
-export const textVariant = (delay: number | null) => {
+import { Variants } from 'framer-motion'
+
+export const textVariant = (delay: number | null): Variants => {
     return {
         hidden: {
             y: -50,
@@ -8,7 +10,7 @@ export const textVariant = (delay: number | null) => {
             y: 0,
             opacity: 1,
             transition: {
-                type: 'spring',
+                type: 'spring' as const,
                 duration: 1.25,
                 delay: delay ?? 0,
             },
@@ -23,7 +25,12 @@ interface IFadeInProps {
     duration: number
 }
 
-export const fadeIn = ({ direction, type, delay, duration }: IFadeInProps) => {
+export const fadeIn = ({
+    direction,
+    type,
+    delay,
+    duration,
+}: IFadeInProps): Variants => {
     return {
         hidden: {
             x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
@@ -38,7 +45,7 @@ export const fadeIn = ({ direction, type, delay, duration }: IFadeInProps) => {
                 type: type,
                 delay: delay,
                 duration: duration,
-                ease: 'easeOut',
+                ease: 'easeOut' as const,
             },
         },
     }
@@ -49,7 +56,7 @@ interface IZoomInProps {
     duration: number
 }
 
-export const zoomIn = ({ delay, duration }: IZoomInProps) => {
+export const zoomIn = ({ delay, duration }: IZoomInProps): Variants => {
     return {
         hidden: {
             scale: 0,
@@ -59,10 +66,10 @@ export const zoomIn = ({ delay, duration }: IZoomInProps) => {
             scale: 1,
             opacity: 1,
             transition: {
-                type: 'tween',
+                type: 'tween' as const,
                 delay: delay,
                 duration: duration,
-                ease: 'easeOut',
+                ease: 'easeOut' as const,
             },
         },
     }
@@ -80,7 +87,7 @@ export const slideIn = ({
     type,
     delay,
     duration,
-}: ISlideInProps) => {
+}: ISlideInProps): Variants => {
     return {
         hidden: {
             x:
@@ -98,7 +105,7 @@ export const slideIn = ({
                 type: type,
                 delay: delay,
                 duration: duration,
-                ease: 'easeOut',
+                ease: 'easeOut' as const,
             },
         },
     }
