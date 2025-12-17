@@ -18,19 +18,9 @@ const Ball = ({ icon }: IBallCanvasProps) => {
     return (
         <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
             <ambientLight intensity={1.2} />
-            <directionalLight
-                position={[0, 0, 5]}
-                intensity={3}
-                castShadow
-            />
-            <directionalLight
-                position={[5, 5, 5]}
-                intensity={2}
-            />
-            <directionalLight
-                position={[-5, 5, 5]}
-                intensity={1.5}
-            />
+            <directionalLight position={[0, 0, 5]} intensity={3} castShadow />
+            <directionalLight position={[5, 5, 5]} intensity={2} />
+            <directionalLight position={[-5, 5, 5]} intensity={1.5} />
             <pointLight position={[0, 0, 10]} intensity={2} />
             <spotLight
                 position={[0, 0, 8]}
