@@ -46,9 +46,6 @@ const Ball = ({ icon }: IBallCanvasProps) => {
                     rotation={[2 * Math.PI, 0, 6.25]}
                     scale={1.2}
                     map={decal}
-                    opacity={1}
-                    depthTest={false}
-                    depthWrite={false}
                 />
             </mesh>
         </Float>
