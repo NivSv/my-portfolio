@@ -25,7 +25,12 @@ interface IFadeInProps {
     duration: number
 }
 
-export const fadeIn = ({ direction, type, delay, duration }: IFadeInProps): Variants => {
+export const fadeIn = ({
+    direction,
+    type,
+    delay,
+    duration,
+}: IFadeInProps): Variants => {
     return {
         hidden: {
             x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
