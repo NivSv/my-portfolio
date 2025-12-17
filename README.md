@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Portfolio</h1>
 
-![Home Page](https://www.linkpicture.com/q/Screenshot_8_31.png)
+![image](https://github.com/NivSv/my-portfolio/assets/71709946/20e7e951-ba93-4ae4-898f-c97101e354b4)
 
 ## Table of contents
 
