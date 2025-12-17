@@ -14,16 +14,28 @@ const Computer = (props: ComputerProps) => {
 
     return (
         <mesh>
-            <hemisphereLight intensity={0.15} groundColor="black" />
+            <ambientLight intensity={0.8} />
+            <hemisphereLight intensity={0.5} groundColor="black" />
             <spotLight
                 position={[-20, 50, 10]}
-                angle={0.12}
-                penumbra={1}
-                intensity={1}
+                angle={0.15}
+                penumbra={0.5}
+                intensity={2}
                 castShadow
-                shadow-mapSize={1024}
+                shadow-mapSize={2048}
             />
-            <directionalLight position={[5, 5, 5]} intensity={4} />
+            <spotLight
+                position={[20, 50, 10]}
+                angle={0.15}
+                penumbra={0.5}
+                intensity={1.5}
+                castShadow
+            />
+            <directionalLight position={[5, 5, 5]} intensity={3} castShadow />
+            <directionalLight position={[-5, 5, 5]} intensity={2} />
+            <directionalLight position={[0, 10, 0]} intensity={1.5} />
+            <pointLight position={[10, 10, 10]} intensity={1} />
+            <pointLight position={[-10, 10, -10]} intensity={0.8} />
             <primitive
                 object={computer.scene}
                 scale={props.isMobile ? 0.7 : 0.75}
