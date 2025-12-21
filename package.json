@@ -28,7 +28,7 @@
         "react-toastify": "^11.0.5",
         "react-vertical-timeline-component": "^3.5.3",
         "three": "^0.182.0",
-        "vite-tsconfig-paths": "^5.0.1",
+        "vite-tsconfig-paths": "^5.1.4",
         "zod": "^3.23.8"
     },
     "devDependencies": {
