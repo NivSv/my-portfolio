@@ -4,9 +4,9 @@
 
 ## Table of contents
 
--   [General info](#general-info)
--   [Technologies](#technologies)
--   [Contact](#contact)
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Contact](#contact)
 
 ## General info
 
@@ -22,5 +22,5 @@ React, Vite, Three.js. Tailwind, Typescript, Framer Motion
 
 ## Contact
 
--   https://www.linkedin.com/in/niv-shtibel/
--   nivsvb@gmail.com
+- https://www.linkedin.com/in/niv-shtibel/
+- nivsvb@gmail.com

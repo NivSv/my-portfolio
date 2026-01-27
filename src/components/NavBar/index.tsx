@@ -113,7 +113,9 @@ const NavBar = () => {
                     </a>
                 ))}
                 <Button size="large">
-                    <a href="https://niv-shtibel.dev/NivShtibelCV.pdf">Resume</a>
+                    <a href="https://niv-shtibel.dev/NivShtibelCV.pdf">
+                        Resume
+                    </a>
                 </Button>
             </div>
             {/* <div className="absolute h-full w-1/4 blur"></div> */}
