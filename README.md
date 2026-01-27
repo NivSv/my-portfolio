@@ -10,11 +10,18 @@
 
 ## General info
 
-This portfolio project is a web application that showcases my skills and work as a developer. The application display my biography, projects, skills, and contact information. The design is responsive and can be accessed on multiple devices.
+Portfolio of Niv Shtibel - Senior Security Backend Developer at Reflectiz with 6+ years of development experience. National Cyber Program Graduate from Magshimim with expertise in Node.js, web security, and high-performance architectures.
 
-The project was built using a combination of technologies, including React, Three.js, Framer Motion, TypeScript, and Tailwind CSS. React was used as the main library for building the user interface and managing the application's state. Three.js was used to create 3D graphics on the web, while Framer Motion was used to add smooth animations and gesture support to React components. TypeScript was used to improve code quality and reduce errors, and Tailwind CSS was used to provide pre-defined styles and classes for building responsive and customizable user interfaces.
+This web application showcases my professional experience, technical skills, and projects. The portfolio highlights my specialization in browser internals (Chromium), development of resilient adversarial-resistant systems, and expertise in building scalable backend infrastructure.
 
-The application includes several features, such as a navigation bar for moving between pages, animations and interactive elements to make it more engaging, and a contact form for users to get in touch with me. The home page provides a brief introduction to me as a developer, while the projects page showcases some of my past work. The skills page lists my technical skills and areas of expertise.
+**Professional Focus:**
+- Core web-scanning engines and heavy-load services
+- Browser automation and security research
+- Microservices architecture with Pub/Sub patterns
+- Cloud infrastructure (GCP, AWS, Kubernetes)
+- Security tools and identity management
+
+The project was built using React, Three.js, Framer Motion, TypeScript, and Tailwind CSS. The design is responsive and features 3D graphics, smooth animations, and interactive elements to create an engaging user experience.
 
 ## Technologies
 

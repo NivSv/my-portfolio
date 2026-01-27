@@ -14,19 +14,19 @@ export interface IExperience {
 
 export const experiences: IExperience[] = [
     {
-        title: 'Senior Backend Developer',
+        title: 'Senior Security Backend Developer',
         company_name: 'Reflectiz',
         icon: reflectiz,
         iconBgColor: '#f0f0f0',
         date: 'Jul 2023 - Present',
         points: [
-            "Leading development of the core scanning bot infrastructure, the most critical component of Reflectiz's security platform that remotely monitors websites for security, privacy, and compliance risks.",
-            'Architecting and implementing advanced browser automation using Puppeteer to scan websites and extract security-relevant data from client-side applications.',
-            'Developing sophisticated JavaScript injection mechanisms to mock browser APIs, intercept network calls, and add hooks for monitoring JavaScript execution in real-time.',
-            'Building scalable microservices architecture with queue-based data passing between services, enabling efficient processing of security scan data for Fortune 500 enterprises.',
-            'Implementing Redis for caching and session management, optimizing performance and reducing database load across distributed microservices.',
-            'Setting up comprehensive monitoring and observability using Grafana dashboards to track system performance, bot execution metrics, and security scan analytics.',
-            'Applying deep understanding of low-level JavaScript and browser internals to detect security vulnerabilities and compliance issues that traditional solutions cannot identify.',
+            "Leading development of the core web-scanning engines and heavy-load services, the most critical components of Reflectiz's security platform that remotely monitors websites for security, privacy, and compliance risks.",
+            'Engineering resilient, adversarial-resistant systems using Node.js to handle high-throughput scanning operations for Fortune 500 enterprises.',
+            'Specializing in the low-level mechanics of browser internals (Chromium), implementing sophisticated JavaScript injection mechanisms to mock browser APIs, intercept network calls, and add execution hooks.',
+            'Architecting scalable microservices with Pub/Sub patterns (Kafka/RabbitMQ) and Redis for distributed caching and session management across heavy-load services.',
+            'Developing production-grade backend solutions that bridge deep security research with scalable architecture, applying advanced understanding of browser internals to detect vulnerabilities traditional solutions miss.',
+            'Building NestJS-based services with GraphQL/gRPC APIs, implementing ORM patterns with Prisma, and deploying on GCP/AWS with Kubernetes (K8s), Helm, and Terraform.',
+            'Setting up comprehensive monitoring and observability using Grafana dashboards, tracking system performance, security scan analytics, and ensuring reliability of adversarial-resistant systems.',
         ],
     },
     {

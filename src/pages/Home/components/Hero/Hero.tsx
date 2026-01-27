@@ -22,9 +22,9 @@ const Hero = () => {
                     <p
                         className={`sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider mt-2 text-white-100`}
                     >
-                        I'm a senior backend developer.
+                        Senior Security Backend Developer at Reflectiz
                         <br />
-                        specializing in Node.js, TypeScript, and infrastructure.
+                        6+ years | Node.js Expert | National Cyber Program Graduate
                     </p>
                 </div>
             </div>
