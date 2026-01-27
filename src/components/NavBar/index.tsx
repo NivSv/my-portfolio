@@ -72,7 +72,7 @@ const NavBar = () => {
                 >
                     <div className="hidden md:block">
                         <Button size="medium">
-                            <a href="https://niv-shtibel.me/NivShtibelCV.pdf">
+                            <a href="https://niv-shtibel.dev/NivShtibelCV.pdf">
                                 Resume
                             </a>
                         </Button>
@@ -113,7 +113,7 @@ const NavBar = () => {
                     </a>
                 ))}
                 <Button size="large">
-                    <a href="https://niv-shtibel.me/NivShtibelCV.pdf">Resume</a>
+                    <a href="https://niv-shtibel.dev/NivShtibelCV.pdf">Resume</a>
                 </Button>
             </div>
             {/* <div className="absolute h-full w-1/4 blur"></div> */}
