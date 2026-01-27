@@ -15,6 +15,7 @@ Portfolio of Niv Shtibel - Senior Security Backend Developer at Reflectiz with 6
 This web application showcases my professional experience, technical skills, and projects. The portfolio highlights my specialization in browser internals (Chromium), development of resilient adversarial-resistant systems, and expertise in building scalable backend infrastructure.
 
 **Professional Focus:**
+
 - Core web-scanning engines and heavy-load services
 - Browser automation and security research
 - Microservices architecture with Pub/Sub patterns

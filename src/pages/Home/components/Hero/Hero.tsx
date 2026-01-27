@@ -24,7 +24,8 @@ const Hero = () => {
                     >
                         Senior Security Backend Developer at Reflectiz
                         <br />
-                        6+ years | Node.js Expert | National Cyber Program Graduate
+                        6+ years | Node.js Expert | National Cyber Program
+                        Graduate
                     </p>
                 </div>
             </div>
