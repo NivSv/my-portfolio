@@ -3,6 +3,22 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
+    "description": "Portfolio of Niv Shtibel - Senior Security Backend Developer at Reflectiz with 6+ years of experience. Expert in Node.js, browser internals (Chromium), web security, and high-performance architectures.",
+    "author": {
+        "name": "Niv Shtibel",
+        "email": "NivSvb@gmail.com",
+        "url": "https://niv-shtibel.dev"
+    },
+    "keywords": [
+        "portfolio",
+        "backend-developer",
+        "security-engineer",
+        "nodejs",
+        "typescript",
+        "web-security",
+        "chromium",
+        "microservices"
+    ],
     "scripts": {
         "dev": "vite",
         "format": "prettier --write .",
