@@ -31,7 +31,7 @@
         "@react-three/drei": "^10.7.7",
         "@react-three/fiber": "^9.5.0",
         "@react-three/postprocessing": "^3.0.4",
-        "axios": "^1.13.2",
+        "axios": "^1.13.5",
         "clsx": "^2.1.1",
         "framer-motion": "^12.29.0",
         "husky-init": "^8.0.0",
