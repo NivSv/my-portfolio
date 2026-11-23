@@ -1,0 +1,17 @@
+{
+    "name": "Niv Shtibel - Senior Security Backend Developer",
+    "short_name": "Niv Shtibel",
+    "description": "Portfolio of Niv Shtibel - Senior Security Backend Developer at Reflectiz with 6+ years of experience. Expert in Node.js, browser internals (Chromium), web security, and high-performance architectures.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a192f",
+    "theme_color": "#112240",
+    "icons": [
+        {
+            "src": "/sv-logo.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ]
+}
