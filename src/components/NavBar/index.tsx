@@ -62,6 +62,7 @@ const NavBar = () => {
                         {link.label}
                     </motion.a>
                 ))}
+                {/* Resume download temporarily hidden
                 <motion.div
                     initial="hidden"
                     whileInView="show"
@@ -78,6 +79,7 @@ const NavBar = () => {
                         </Button>
                     </div>
                 </motion.div>
+                */}
                 <div
                     className={clsx(
                         'flex flex-col gap-[7px] md:hidden z-50',
@@ -112,11 +114,13 @@ const NavBar = () => {
                         {link.label}
                     </a>
                 ))}
+                {/* Resume download temporarily hidden
                 <Button size="large">
                     <a href="https://niv-shtibel.dev/NivShtibelCV.pdf">
                         Resume
                     </a>
                 </Button>
+                */}
             </div>
             {/* <div className="absolute h-full w-1/4 blur"></div> */}
         </div>
