@@ -1,5 +1,5 @@
 import oversight from '../assets/companies/oversight.png'
-import checkpoint from '../assets/companies/checkpoint.png'
+// import checkpoint from '../assets/companies/checkpoint.png'
 import magshimim from '../assets/companies/magshimim.png'
 import reflectiz from '../assets/companies/reflectiz.webp'
 
@@ -44,18 +44,19 @@ export const experiences: IExperience[] = [
             `Implemented Kafka as an internal messaging system, boosting data handling and communication efficiency, resulting in a 30% improved processing speed and increased customer satisfaction.`,
         ],
     },
-    {
-        title: 'Automation Developer',
-        company_name: 'Check Point Software Technologies',
-        icon: checkpoint,
-        iconBgColor: '#f0f0f0',
-        date: 'Jul 2020 - Mar 2021',
-        points: [
-            'Developed a C++ program to detect failures in industrial machinery before errors occurred, such as software compatibility issues from OS updates, reducing technical assistance, and improving equipment availability for employees by 15%.',
-            `Facilitated the maintenance of high-quality standards for automation tools and software through Azure Event Hubs and Log Analytics for bug detection in adherence to best practices, resulting in a 40% reduction in code issues.`,
-            `Constructed team goals through requirements gathering, short-term and long-term planning, project management, and mentorship in collaboration with others, resulting in a more cohesive and productive team environment.`,
-        ],
-    },
+    // Check Point experience temporarily hidden
+    // {
+    //     title: 'Automation Developer',
+    //     company_name: 'Check Point Software Technologies',
+    //     icon: checkpoint,
+    //     iconBgColor: '#f0f0f0',
+    //     date: 'Jul 2020 - Mar 2021',
+    //     points: [
+    //         'Developed a C++ program to detect failures in industrial machinery before errors occurred, such as software compatibility issues from OS updates, reducing technical assistance, and improving equipment availability for employees by 15%.',
+    //         `Facilitated the maintenance of high-quality standards for automation tools and software through Azure Event Hubs and Log Analytics for bug detection in adherence to best practices, resulting in a 40% reduction in code issues.`,
+    //         `Constructed team goals through requirements gathering, short-term and long-term planning, project management, and mentorship in collaboration with others, resulting in a more cohesive and productive team environment.`,
+    //     ],
+    // },
     {
         title: 'National Cyber Education Program',
         company_name: 'Magshmim',
